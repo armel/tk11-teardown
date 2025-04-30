@@ -25,12 +25,10 @@ MVSilicon does **not provide any complete public datasheet** for the AP8048 on i
 Technical details such as **datasheets, pinouts, and application examples** are usually only available **under NDA (Non-Disclosure Agreement)** to selected industrial partners — most often Chinese OEMs and manufacturers.
 
 ## 3. No SDK or Developer Tools  
-Unlike general-purpose microcontrollers (like STM32 or ESP32), there is **no public SDK or programming toolchain** available.  
-These chips are designed for **pre-programmed, fixed-function applications** such as audio modules, toys, and embedded sound systems.
+Unlike general-purpose microcontrollers (like STM32 or ESP32), there is **no public SDK or programming toolchain** available. These chips are designed for **pre-programmed, fixed-function applications** such as audio modules, toys, and embedded sound systems.
 
 ## 4. Locked-Down, Application-Specific Use  
-The AP8048 is meant to execute **factory-burned firmware only**, with **no external interface** for programming or debugging.  
-It is used as a **black-box SoC** in mass-produced consumer products.
+The AP8048 is meant to execute **factory-burned firmware only**, with **no external interface** for programming or debugging. It is used as a **black-box SoC** in mass-produced consumer products.
 
 ## 5. Extremely Limited Community Resources  
 There's **very little community documentation** available.  
