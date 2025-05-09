@@ -5,14 +5,20 @@ Open reimplementation of the Quansheng TK11 Firmware
 
 At this stage of my research, the path ahead appears long and uncertain.
 It’s difficult to find reliable information about the AP8048 microcontroller.
-From what I’ve gathered so far, it seems to have 128 KB of SRAM, which is good news.
+From what I’ve gathered so far, here is a quick comparaison between K5 and TK11.
 
-However, I still don’t know the size of its internal Flash memory, which would be needed to store a potential bootloader and, more importantly, the firmware itself.
+| Feature                          | Quansheng K5                                              | Quansheng TK11                                             |
+|----------------------------------|------------------------------------------------------------|-------------------------------------------------------------|
+| **MCU**                          | DP32G030 *(based on Arm® Cortex®-M0)*                      | AP8048 *(based on Arm® Cortex®-M3)*                         |
+| **Internal Flash memory**        | 64 KB (512 Kbit)                                           | 2 MB (16 Mbit)                                              |
+| **Internal SRAM**                | 8 KB                                                       | 128 KB                                                      |
+| **External EEPROM**              | 8 KB or 64 KB external                                     | None                                                        |
+
+> [!NOTE] 
+> 1 KB = 8 Kbit*
 
 In addition, no external EEPROM has been identified on the TK11’s PCB — unlike on the Quansheng K5.
-This suggests that calibration data, persistent settings, and the 999 memory channels are likely stored directly within the AP8048’s internal memory.
-
-But this remains to be confirmed — these are still just hypotheses.
+So bootloader, firmware, calibration data, persistent settings and the 999 memory channels are stored directly within the AP8048’s internal flash memory.
 
 The technical architecture of the TK11 therefore appears to be quite different from that of the K5.
 
