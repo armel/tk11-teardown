@@ -15,7 +15,7 @@ From what I’ve gathered so far, here is a quick comparaison between K5 and TK1
 | **External EEPROM**              | 8 KB or 64 KB external                                     | None                                                        |
 
 > [!NOTE] 
-> 1 KB = 8 Kbit*
+> 1 KB = 8 Kbit
 
 In addition, no external EEPROM has been identified on the TK11’s PCB — unlike on the Quansheng K5.
 So bootloader, firmware, calibration data, persistent settings and the 999 memory channels are stored directly within the AP8048’s internal flash memory.
