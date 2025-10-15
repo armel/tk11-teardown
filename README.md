@@ -1,5 +1,5 @@
 # tk11-teardown
-Teardown of the Quansheng TK11.
+Quansheng TK11 teardown and analysis.
 
 # Current status
 
